@@ -31,8 +31,8 @@
             <li class="nav-item {{ request()->routeIs('admin.profile.index') ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('admin.profile.index') }}"> Profile Settings </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/samples/login.html"> Login </a>
+            <li class="nav-item {{ request()->routeIs('admin.system.index') ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('admin.system.index') }}"> System Settings </a>
             </li>
           </ul>
         </div>

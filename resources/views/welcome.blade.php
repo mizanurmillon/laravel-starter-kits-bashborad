@@ -1,6 +1,6 @@
-{{-- @php
+@php
     $systemSetting = App\Models\SystemSetting::first();
-@endphp --}}
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     {{-- FAVICON --}}
-    {{-- <link rel="shortcut icon" type="image/x-icon"
-       href="{{ isset($systemSetting->favicon) && !empty($systemSetting->favicon) ? asset($systemSetting->favicon) : asset('frontend/logo.png') }}" />  --}}
+    <link rel="shortcut icon" type="image/x-icon"
+       href="{{ isset($systemSetting->favicon) && !empty($systemSetting->favicon) ? asset($systemSetting->favicon) : asset('frontend/logo.png') }}" /> 
     <style>
         * {
             margin: 0;

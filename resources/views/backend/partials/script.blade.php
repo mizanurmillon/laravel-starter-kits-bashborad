@@ -17,6 +17,8 @@
 
 <script src="{{ asset('backend/assets/js/sweetalert2@11.js') }}"></script>
 <script src="{{ asset('backend/assets/js/toastr.min.js') }}"></script>
+<script src="{{ asset('backend/assets/js/dropify.min.js') }}"></script>
+<script src="{{ asset('backend/assets/js/ckeditor.js') }}"></script>
 
 <script>
     $(document).ready(function() {
@@ -102,6 +104,12 @@
             };
             toastr.warning("{{ session('t-warning') }}");
         @endif
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('.dropify').dropify();
     });
 </script>
 
